@@ -1,10 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import 'bootstrap/dist/css/bootstrap.css'
 
-import Badge from './components/Badge'
+import 'bootstrap/dist/css/bootstrap.css'
+import './global.css';
+
+import BadgeNew from './pages/BadgeNew';
 
 const container = document.getElementById('app');
-ReactDOM.render(<Badge />, container);
+ReactDOM.render(
+<BadgeNew
+firstName="Carlos" 
+lastName="Mendoza"
+email="kirit0@gmail.com"
+profession="Fontend Engineer"/>, container);
 
